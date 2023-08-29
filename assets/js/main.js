@@ -35,16 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
    * Swiper conteúdos
    */
-  new Swiper(".swiper", {
+  new Swiper(".cont", {
     cssMode: true,
     loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 3,
+    spaceBetween: 1,
+    autoHeight: true,
+    425: {
+      slidesPerView: 1,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -58,9 +62,18 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Swiper depoimentos
    */
-  new Swiper(".swiper", {
+  new Swiper(".dep", {
     cssMode: true,
     loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 3,
+    spaceBetween: 1,
+    autoHeight: true,
+    425: {
+      slidesPerView: 1,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
