@@ -434,19 +434,27 @@ section {
 /*--------------------------------------------------------------
 # Depoimentos Section
 --------------------------------------------------------------*/
-.depoimento-swiper {
+.swiper {
   height: 500px;
 }
 
-.depoimento-swiper .swiper-slide {
+.swiper-slide {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.swiper-button-next, .swiper-button-prev{
+  color: var(--color-primary);
+}
+
+.swiper-pagination{
+
+}
+
 @media (max-width: 450px) {
-  .depoimentos-swiper {
+  .swiper {
     height: 270px;
   }
 }
@@ -466,22 +474,7 @@ section {
 /*--------------------------------------------------------------
 # Conteúdo Section
 --------------------------------------------------------------*/
-.conteudo-swiper {
-  height: 500px;
-}
 
-.conteudo-swiper .swiper-slide {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 450px) {
-  .conteudo-swiper {
-    height: 270px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Pricing Section
