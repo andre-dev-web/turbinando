@@ -37,26 +37,26 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Swiper conteúdos
    */
-  new Swiper(".cont", {
-    cssMode: true,
+  new Swiper(".tranding-slider", {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
-    slidesPerView: 3,
-    spaceBetween: 1,
-    autoHeight: true,
-    425: {
-      slidesPerView: 1,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    keyboard: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
   });
   
   /**
@@ -68,11 +68,19 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: {
       delay: 5000,
     },
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 1,
     autoHeight: true,
-    425: {
-      slidesPerView: 1,
+    parallax:true,
+    breakpoints: {
+      450: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      1250: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
     },
     navigation: {
       nextEl: ".swiper-button-next",
