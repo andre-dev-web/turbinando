@@ -432,9 +432,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials Section
+# Depoimentos Section
 --------------------------------------------------------------*/
+.depoimento-swiper {
+  height: 500px;
+}
 
+.depoimento-swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .depoimentos-swiper {
+    height: 270px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Pilars Section
@@ -449,13 +464,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Slide Section
+# Conteúdo Section
 --------------------------------------------------------------*/
-.swiper {
+.conteudo-swiper {
   height: 500px;
 }
 
-.swiper-slide {
+.conteudo-swiper .swiper-slide {
   text-align: center;
   display: flex;
   align-items: center;
@@ -463,7 +478,7 @@ section {
 }
 
 @media (max-width: 450px) {
-  .swiper {
+  .conteudo-swiper {
     height: 270px;
   }
 }

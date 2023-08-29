@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Swiper conteúdos
    */
-  new Swiper(".swiper", {
+  new Swiper(".conteudo-swiper", {
     cssMode: true,
     loop: true,
     navigation: {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Swiper depoimentos
    */
-  new Swiper(".swiper", {
+  new Swiper(".depoimento-swiper", {
     cssMode: true,
     loop: true,
     navigation: {
