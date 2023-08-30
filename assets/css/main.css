@@ -9,6 +9,25 @@
   scroll-behavior: smooth;
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--color-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C45300;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -69,62 +88,6 @@ section {
 .section-header p {
   margin-bottom: 0;
   color: #6f6f6f;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs .page-header {
-  padding: 60px 0 60px 0;
-  min-height: 20vh;
-  position: relative;
-  background-color: var(--color-primary);
-}
-
-.breadcrumbs .page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.breadcrumbs .page-header p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.breadcrumbs nav {
-  background-color: #f6f6f6;
-  padding: 20px 0;
-}
-
-.breadcrumbs nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--color-default);
-}
-
-.breadcrumbs nav ol a {
-  color: var(--color-primary);
-  transition: 0.3s;
-}
-
-.breadcrumbs nav ol a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs nav ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs nav ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: var(--color-primary);
-  content: "/";
 }
 
 /*--------------------------------------------------------------
@@ -457,6 +420,12 @@ section {
   width: 300px;
 }
 
+@media (max-width: 500px) {
+  .pilars .pilar img {
+    width: 200px;
+  }
+}
+
 .pilares{
   display: flex;
   justify-content: space-around;
@@ -467,23 +436,6 @@ section {
 /*--------------------------------------------------------------
 # Slides
 --------------------------------------------------------------*/
-::-webkit-scrollbar {
-  width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
 #tranding .container {
   max-width: 124rem;
   padding: 0 1rem;
@@ -505,32 +457,32 @@ section {
   position: relative;
 }
 
-@media (max-width:500px) {
+@media (max-width:390px) {
   #tranding .tranding-slider {
     height: 45rem;
   }
 }
 
 .tranding-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 360px;
+  height: 640px;  
   position: relative;
 }
 
-@media (max-width:500px) {
+@media (max-width:390px) {
   .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 216px;
+    height: 384px;
   }
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 216px;
+    height: 384px;
   }
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 37rem;
-  height: 42rem;
+  width: 360px;
+  height: 640px;
   object-fit: cover;
 }
 
@@ -547,35 +499,40 @@ section {
   justify-content: center;
 }
 
+@media (max-width:390px){
+  .tranding-slider-control{
+    margin-top: 2em;
+  }
+}
+
 .tranding-slider-control .swiper-button-next {
   left: 58% !important;
   transform: translateX(-58%) !important;
 }
 
-@media (max-width:990px) {
+@media (max-width:1024px) {
   .tranding-slider-control .swiper-button-next {
     left: 70% !important;
     transform: translateX(-70%) !important;
   }
 }
-
-@media (max-width:450px) {
+@media (max-width:580px) {
   .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
+    left: 87% !important;
     transform: translateX(-80%) !important;
   }
 }
 
-@media (max-width:990px) {
+@media (max-width:1024px) {
   .tranding-slider-control .swiper-button-prev {
     left: 30% !important;
     transform: translateX(-30%) !important;
   }
 }
 
-@media (max-width:450px) {
+@media (max-width:580px) {
   .tranding-slider-control .swiper-button-prev {
-    left: 20% !important;
+    left: 13% !important;
     transform: translateX(-20%) !important;
   }
 }

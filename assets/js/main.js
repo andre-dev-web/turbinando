@@ -45,7 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: {
       delay: 3000,
     },
-    slidesPerView: 'auto',
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // when window width is >= 390px
+      390: {
+        slidesPerView: 'auto'
+      }
+    },
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
