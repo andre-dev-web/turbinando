@@ -409,31 +409,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pilars Section
---------------------------------------------------------------*/
-.pilars{
-  background-color: #0e0e0e;
-}
-
-.pilars .pilar img {
-  object-fit: cover;
-  width: 300px;
-}
-
-@media (max-width: 500px) {
-  .pilars .pilar img {
-    width: 200px;
-  }
-}
-
-.pilares{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
-/*--------------------------------------------------------------
 # Slides
 --------------------------------------------------------------*/
 #tranding .container {
