@@ -10,13 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
     });
   }
-
+  
   /**
-   * Initiate glightbox
+   * Unmute video
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  const video = document.getElementById('video');
+  function toggleMute(){
+    video.muted = !video.muted;
+    document.getElementById('hide-btn').style.display = 'none';
+  }
+  window.addEventListener('click', toggleMute);
 
   /**
    * Scroll top button

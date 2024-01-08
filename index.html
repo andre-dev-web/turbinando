@@ -20,7 +20,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
@@ -56,39 +55,59 @@
 </head>
 
 <body>
-  <header class="bg-danger text-white">
-    <p class="text-center fs-2 p-1 pt-2" >Cupom blacknovember - oferta por tempo limitado!</p>
-  </header>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h1><img src="assets/img/title.png" class="img-fluid title-img" alt="" data-aos="zoom-out" data-aos-delay="100"></h1>
-          <h2>Comece a viajar totalmente de graça! <span class="title-cta">Transforme seus sonhos em realidade!</span></h2>
-          <p>Imagine conseguir viajar para o destino dos seus sonhos, se hospedar nos melhores hotéis, com as pessoas que você ama. Esse sonho DEVE virar realidade, você merece isso e está a um passo de acessar as melhores estratégias, as estratégias que vão transformar sua vida.</p>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#dep" class="btn-get-started">Quero viver isso</a>
+    <div class="container">
+        <div class="flex justify-content-center">
+          <h2 class="text-center main-txt">Descubra como <span class="title-cta">viajar 3x mais por ano</span> sem aumentar seus gastos do dia a dia. Apenas aplicando estratégias inteligentes que vão te <span class="title-cta">gerar muito mais benefícios.</span></h2>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+          
+            <button id="hide-btn" class="mb-2" onclick="toggleMute()"><span class="h5">Aperte para ouvir</span> <img src="./assets/img/sound.svg" width="30px" alt=""></button>
+            <video id='video' height="" width="800" class="img-fluid video" alt="" src="assets/img/VLC.mp4" controls autoplay muted></video>
+          
+          </div>
+          
+          <div class="d-flex justify-content-center pt-4">
+            <a href="#dep" class="btn-get-started text-center">SIM! QUERO APRENDER A GERAR MAIS BENEFÍCIOS HOJE! >></a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-        </div>
-      </div>
     </div>
   </section>
   <!-- End Hero Section -->
 
   <main id="main">
 
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container text-center" data-aos="zoom-out">
-        <a href="https://youtu.be/zWzE5It5-Lw" class="glightbox play-btn"></a>
-        <h3>Atenção: aperte o play e descubra!</h3>
-        <a class="cta-btn" href="#pricing">Quero fazer parte!</a>
+    <!-- ======= Bonus Section ======= -->
+    <section id="bonus" class="pricing sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Acompanhamento Dedicado</h2>
+          <p>Apenas teoria sobre as melhores estratégias de geração, acúmulo e multiplicação de milhas não é o suficiente!</p>
+        </div>
+
+        <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+
+          <div class="col-lg-6 pt-8 pl-lg-5">
+              <img src="assets/img/pricing.png" class="img-fluid pricing-img" alt="">
+          </div><!-- End bonus img -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item">
+              
+              <p class="text-left">Descubra a revolução nos seus resultados com acompanhamento real.</p>
+              <p class="text-left">Passar horas assistindo aulas gravadas te agrega conhecimento teórico mas pode deixá-lo inseguro na hora de colocar em prática.</p>
+              <p class="text-left">Para fazer com que seus gastos se transformem em mais benefícios e viagens para você e sua família, é necessário mais do que apenas aulas teóricas sobre milhas...</p>
+              <p class="text-left">Você precisa de um SUPORTE PREMIUM DE ACOMPANHAMENTO, com o próprio Felipe realizando análises lado a lado com você, tornando esse processo mais simples e te auxiliando de forma rápida e direcionada em suas dúvidas e dificuldades.</p>
+              <p class="text-left">E o Turbinando Milhas é o único programa que oferece esse acompanhamento premium!</p>
+
+            </div>
+          </div><!-- End Bonus Item -->
+
+        </div>
+
       </div>
-    </section><!-- End Call To Action Section -->
+    </section><!-- End bonus Section -->
 
     <!-- ======= Conteúdo Section ======= -->
     <section id="tranding">
@@ -462,28 +481,29 @@
           <p>Isso é o que você está garantindo ao adquirir o Turbinando Milhas hoje:</p>
         </div>
 
-        <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row g-4 py-lg-5 d-flex justify-content-center" data-aos="zoom-out" data-aos-delay="100">
 
-          <div class="col-lg-6 pt-8 pl-lg-5">
-              <img src="assets/img/pricing.png" class="img-fluid pricing-img" alt="">
-          </div><!-- End Pricing img -->
-
-          <div class="col-lg-6">
-            <div class="pricing-item featured">
-              <img src="assets/img/title.png" class="pricing-title-img" alt="" data-aos="zoom-out" data-aos-delay="100">
-
+          <div class="col-lg-6 pt-8 pl-lg-5 d-flex flex-column justify-content-center">
+            <div class="text-center">
+              <img src="assets/img/title.svg" class="pricing-title-img" alt="" data-aos="zoom-out" data-aos-delay="100">
               <ul>
                 <li><i class="bi bi-check"><span>Curso completo com mais de 150 aulas do básico ao avançado <span class="text-success">R$1997</span></span></i></li>
                 <li><i class="bi bi-check"><span>Aulas bônus exclusivas <span class="text-success">R$297</span></span></i></li>
                 <li><i class="bi bi-check"><span>Quatro cursos bônus potencializadores <span class="text-success">R$647</span></span></i></li>
-                <li><i class="bi bi-check"><span>Comunidade de suporte por três meses <span class="text-success">R$397</span></span></i></li>
+                <li><i class="bi bi-check"><span>Comunidade de suporte por um ano <span class="text-success">R$397</span></span></i></li>
                 <li><i class="bi bi-check"><span>Grupo de alertas Radar Turbinado <span class="text-success">R$397</span></span></i></li>
               </ul>
+            </div>
+    
+          </div><!-- End Pricing img -->
+
+          <div class="col-lg-6 py-5">
+            <div class="pricing-item featured">
               
-              <p class="text-center text-success">Desconto de R$2.744,00</p>
-              <p class="text-center">De R$3.741,00</p>
-              <h4><span>Por 12x de </span><sup>R$69.65</sup></h4>
-              <p class="text-center pt-2">ou R$697 à vista.</p>
+              <p class="text-center h4 pb-2">Começe hoje e aproveite o máximo do mundo das milhas</p>
+              <p class="text-center text-danger h5">De <s>R$3.741,00</s></p>
+              <h4><span>Por 12x de </span>R$99,50</h4>
+              <p class="text-center pt-2 h5">ou R$997 à vista.</p>
 
               <div class="text-center">
                 <a href="https://pay.hotmart.com/O78610885P?off=9d2gu7bg&checkoutMode=10&bid=1698762985356" class="buy-btn">obter acesso imediato</a>
@@ -501,16 +521,15 @@
     <!-- ======= C.T.A. ======= -->
     <section id="cta">
       <div class="container col-xxl-8 px-4 py-5" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Trajetória do Mentor</h2>
-          <p>Aquele que vai guiar você rumo ao seu futuro.</p>
-        </div>
         <div class="row flex-lg-row-reverse align-items-center">
           <div class="col-10 col-sm-8 col-lg-6">
             <img src="assets/img/CTA-img.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <p class="lead">
+            <div class="section-header">
+              <h2>Seu guia nessa viajem</h2>
+            </div>
+            <p class="h6 text-center">
               Felipe Souza, tem 34 anos e é educador financeiro especialista em milhas. Trabalhou por 8 anos como desenvolvedor de software nas maiores agências de viagens corporativas do Brasil.
               Jogou tudo para o alto para empreender, abriu sua própria hamburgueria onde foi proprietário durante 5 anos. No quarto ano de hamburgueria começou a ensinar pessoas sobre milhas e a cuidar melhor do seu dinheiro. Com um ano de projeto vendeu a hamburgueria para se dedicar totalmente em transformar a vida das pessoas, através dos conhecimentos.
               Desde sempre foi fora da curva, em todas as suas escolhas sempre prezou por dar um salto de fé rumo ao que sempre desejava e hoje transborda tudo o que já viveu e aprendeu para poder proporcionar o mesmo a quem assim como ele não se encaixam nos padrões e lutam para viver seus sonhos!
@@ -697,7 +716,6 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
